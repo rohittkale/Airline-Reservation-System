@@ -97,13 +97,13 @@ AirlineReservationSystem/
    mysql -u root -p
    
    -- Execute database script
-   source /path/to/AirlineReservationSystem/db/airline_db.sql
+   source /path/to/AirlineReservationSystem/DB/airline.sql
    ```
 
 3. **Configure Database Connection**
    Edit `src/utils/DBConnection.java`:
    ```java
-   private static final String DB_URL = "jdbc:mysql://localhost:3306/airline_reservation_db";
+   private static final String DB_URL = "jdbc:mysql://localhost:3306/airline";
    private static final String USERNAME = "root";
    private static final String PASSWORD = "your_password";
    ```
@@ -138,18 +138,13 @@ Advanced flight search and reservation system with real-time availability.
 
 ***
 
-## 🔐 Default Login Credentials
+## 🔐 Default Login Credentials for Admin
 
 ### Admin Access
 - **Email**: `admin@airline.com`
 - **Password**: `admin123`
 - **Role**: Administrator
-
-### Customer Access
-- **Email**: `john@example.com`
-- **Password**: `password123`
-- **Role**: Customer
-
+- 
 *Or create a new account using the registration form*
 
 ***
